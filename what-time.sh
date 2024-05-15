@@ -1,7 +1,8 @@
-#!/bin/bash
-
 GREEN="\e[32m"
 ENDCOLOR="\e[0m"
 
+while true; do
     current_time=$(date +"%T")
-    echo -e "${GREEN}Current Time: $current_time${ENDCOLOR}"
+    printf "${GREEN}Current Time: ${ENDCOLOR}$current_time\n"
+    sleep 60 # Sleep for 60 seconds (1 minute)
+done
